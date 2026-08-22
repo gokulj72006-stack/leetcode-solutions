@@ -9,7 +9,7 @@ class Solution {
        } 
        int fake=n;
        while(fake>0){
-        product*=fake%10;
+        product*=fake%10;            //TIME COMPLEXITY:O(NLOGN)
         fake/=10;
        }
        if(n%(sum+product)==0){
