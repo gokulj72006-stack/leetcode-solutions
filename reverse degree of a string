@@ -1,0 +1,14 @@
+class Solution {
+    public int reverseDegree(String s) {
+        int product=0;
+        int a=1;
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            int position=c-96;
+            int reverse=27-position;
+            product+=a*reverse;
+            a++;
+        }
+        return product;
+    }
+}
