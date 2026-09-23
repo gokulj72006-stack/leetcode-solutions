@@ -1,0 +1,15 @@
+class Solution {
+    public boolean checkPerfectNumber(int num) {
+        int divisor=0;
+        for(int i=1;i<num;i++){
+            if(num%i==0){
+                divisor+=i;
+            }
+        }
+        System.out.println(divisor);
+        if(divisor==num){
+            return true;
+        }
+        return false;
+    }
+}
